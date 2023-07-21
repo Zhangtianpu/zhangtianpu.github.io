@@ -1,7 +1,6 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
+title: Henan Highway Management System
 img: assets/img/HighwaySystem.png
 importance: 1
 category: work
