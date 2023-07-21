@@ -5,7 +5,6 @@ description: a project with a background image
 img: assets/img/HighwaySystem.png
 importance: 1
 category: work
-related_publications: einstein1956investigations, einstein1950meaning
 ---
 
 As a Data Algorithm Engineer in the Henan Province Highway Management System, my primary responsibilities include data processing and improving the accuracy of traffic flow prediction on the highway.
@@ -40,7 +39,7 @@ To further enhance the model's accuracy, we introduced a dedicated Update Graph 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/STGNN.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/STGNN_overview.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
