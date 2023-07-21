@@ -63,4 +63,45 @@ Fig. 4 and 5 show the trends of the total data volume, missing data, and noise d
     Fig.5 Trend of Total Data and Noisy Data from 2009 to 2018.
 </div>
 
+Fig. 6 presents the trend chart of gas data for a certain oil-immersed transformer from February to November 2018, along with its missing value imputation results. Through the trend chart and imputation results, the correlation of gas variation can be intuitively observed, and it is evident that the transformer underwent maintenance at the end of September. The imputation results also demonstrate that our system effectively filled the missing values in the gas data.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/power_grid_equipment_fault_prediction/Gas Trend and Interpolated Data for a Certain Transformer.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Fig.6 Gas trend and interpolated data for a certain transformer.
+</div>
+
+As shown in fig. 7, the pie chart illustrates that the fault data accounts for 5.86% of the total data from 2009 to 2018, approximately 90,000 records. The proportion of fault data is relatively high; however, it is important to note that the predicted faults in the system may not perfectly match the actual faults. As defined earlier in the context of fault states, when the remaining useful life of a device is less than or equal to the critical value, the device is considered to be in a fault state. At this point, there is still a short period of time before the actual device failure occurs, which leads to the relatively higher percentage of fault data.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/power_grid_equipment_fault_prediction/Fault Data Proportio.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Fig.7 Fault data proportion.
+</div>
+
+
+As shown in Fig. 8 and Figure 9, they display the trends of the remaining useful life and fault occurrences of a certain transformer from 2009 to 2018, along with their corresponding predicted values. It is evident that the prediction system accurately forecasts the remaining useful life and potential faults of the transformer. Therefore, based on the experimental results, the proposed fault prediction system demonstrates high prediction accuracy and practicality, providing reliable support for the operation and maintenance of power grid equipment.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/power_grid_equipment_fault_prediction/Trend Chart of RUL.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Fig.8 The trend chart of the transformer's remaining useful life and the comparison with the predicted values.
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/power_grid_equipment_fault_prediction/Transformer Failure Data Trend.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Fig.9 Comparison of transformer fault data trend plots and fault prediction results.
+</div>
 
