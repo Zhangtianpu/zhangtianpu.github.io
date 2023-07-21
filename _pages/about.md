@@ -8,19 +8,26 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
 
-news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+ <p align="left">
+I am a post-graduate student from North China University of Technology, majoring in computer technology. With a GPA of 3.91 out of 4, I have received several prestigious awards, including Outstanding Master Graduates of Beijing and the National Scholarship for Postgraduates. My research interests lie in deep learning, spatio-temporal big data, and smart cities. Throughout my academic journey, I have gained proficiency in various technologies, such as TCN, GCN, GRU, LSTM, CNN, Transformer, HDFS, MapReduce, Spark, and Hive, and have published several research papers.
+</p>
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+ <p align="left">
+For my master's dissertation, titled "Spatio-temporal Features Analysis and its Application based on Graph Convolutional Networks," I proposed two improved models named MSTGCN and STHNN, which achieved high accuracy in predicting traffic flow in the highway management system of Henan.
+</p>
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+ <p align="left">
+Before pursuing my post-graduate studies, I obtained a bachelor's degree in Geographic Information Science from Beijing University of Civil Engineering and Architecture. During my undergraduate studies, I gained expertise in GIS and participated in a WebGis system development project, utilizing technologies like GeoServer, OpenLayers, Bootstrap, and ECharts.
+</p>
+
+ <p align="left">
+With two years of working experience as a data analysis engineer, I contributed to the development of data storage and analysis platforms using big data technologies for the state grid's new energy cloud platform. I also designed electricity power predictive systems for photovoltaic power stations and recommendation systems for news in the renewable energy field, employing machine learning technology. In addition, I utilized big data technologies like Hive and Spark to analyze customer behavior and create user portraits at Unicom Big Data Co., Ltd.
+</p>
+
+ <p align="left">
+As a prospective Ph.D. applicant, my diverse academic background, research achievements, and industry experience have shaped my passion for advancing in-depth research in the field of computer technology and contributing to cutting-edge innovations in artificial intelligence and smart city technologies.
+</p>
