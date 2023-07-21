@@ -18,41 +18,31 @@ The system architecture can be illustrated as shown in Fig. 1, comprising three 
     </div>
 </div>
 <div class="caption">
-    Fig 1. Overview of the highway management system。
+    Fig 1. Overview of the highway management system.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+In the system, I primarily focused on the development of the Model Layer and Application Layer. In the Model Layer, I addressed the issue of missing values in the original data using linear interpolation, and I also implemented data aggregation to facilitate traffic flow prediction.
 
+I designed two distinct traffic flow prediction algorithms in the system, namely Multi-graph Spatio-temporal Graph Convolutional Network (MSTGCN) and Spatio-temporal Heritable Neural Networks for Traffic Flow Prediction (STHNN). MSTGCN is a fully convolutional network model based on GCN and TCN, which exhibits high-speed training and prediction capabilities. For data normalization, we employed a strategy to handle data imbalance caused by the long-tail distribution of traffic flow at network-wide toll stations. The model also incorporates graph convolutional networks to capture spatio-temporal features across various semantics. Additionally, meteorology and calendar features are utilized in the full connection stage to extract external characteristics of traffic flow. The overall architecture of this model is depicted in Fig. 2.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/MSTGCN.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    Fig 1. Overview of the MSTGCN.
 </div>
 
+Based on the Encoder-Decoder architecture, the STHNN model utilizes a larger number of parameters to achieve more precise prediction results. In our approach, we learn long-term global spatio-temporal correlations by merging features at different resolutions through the encoder-decoder process. Moreover, spatial heritability is achieved by condensing historical local spatial features in the novel spatial hidden state of each Gate Recurrent Unit (GRU) cell.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+To further enhance the model's accuracy, we introduced a dedicated Update Graph module that aggregates historical features with current ones at each moment. This allows the updated spatio-temporal hidden states to better adapt to real traffic conditions. The overall architecture of the STHNN model is illustrated in Fig. 3.
 
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/STGNN.png" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-```
-{% endraw %}
+<div class="caption">
+    Fig 1. Overview of the STHNN.
+</div>
