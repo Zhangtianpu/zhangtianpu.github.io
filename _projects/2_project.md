@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Power Grid Equipment Fault Prediction 
-img: assets/img/HighwaySystem.png
+img: assets/img/power_grid_equipment_fault_prediction/Data Trend in Different Provinces.png
 importance: 2
 category: work
 ---
