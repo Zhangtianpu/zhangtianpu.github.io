@@ -1,4 +1,4 @@
-![Data Trend in Different Provinces](https://github.com/Zhangtianpu/Zhangtianpu.github.io/assets/26385184/10bdf5f6-304e-4d8e-a07a-27f8259d8f8e)---
+---
 layout: page
 title: Power Grid Equipment Fault Prediction 
 img: assets/img/HighwaySystem.png
